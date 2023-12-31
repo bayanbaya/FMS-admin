@@ -26,7 +26,7 @@ header('location:../index.php');
 
 <!--Header-part-->
 <div id="header">
-  <h1><a href="dashboard.html">Perfect Gym Admin</a></h1>
+  <h1><a href="dashboard.html">Mustang Fitness Admin</a></h1>
 </div>
 <!--close-Header-part--> 
 
@@ -232,7 +232,7 @@ while($row=mysqli_fetch_array($result)){
 <!--Footer-part-->
 
 <div class="row-fluid">
-  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By Naseeb Bajracharya</a> </div>
+  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By Bambaraa</a> </div>
 </div>
 
 <style>

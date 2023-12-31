@@ -78,8 +78,6 @@ header('location:../index.php');
                 <input type="text" class="span11" name="description" value='<?php echo $row['description']; ?>' required />
               </div>
             </div>
-           
-            
             <div class="control-group">
               <label class="control-label">Date of Purchase :</label>
               <div class="controls">
@@ -154,6 +152,18 @@ header('location:../index.php');
         </div>
         <div class="widget-content nopadding">
           <div class="form-horizontal">
+            <div>ene bopal uzuulelqtu ym </div>
+            <div> </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            publioc statuc voi{
+                  main{
+                    <a>mainsurgal sa/div></a>
+                    <a></a><a></a><a></a>
+                    <a></a>                  }
+                    <a></a>
+            }
             
             
     
@@ -201,7 +211,7 @@ header('location:../index.php');
 <!--Footer-part-->
 
 <div class="row-fluid">
-  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By Naseeb Bajracharya</a> </div>
+  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By Bambaraa</a> </div>
 </div>
 
 

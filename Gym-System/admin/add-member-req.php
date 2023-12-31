@@ -138,7 +138,7 @@ if(!$result){
 <!--Footer-part-->
 <!-- Visit codeastro.com for more projects -->
 <div class="row-fluid">
-  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By Naseeb Bajracharya</a> </div>
+  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By Bambaraa</a> </div>
 </div>
 
 <style>
