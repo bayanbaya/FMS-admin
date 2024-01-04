@@ -83,10 +83,10 @@ header('location:../index.php');
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label">D.O.R :</label>
+              <label class="control-label">Бүртгүүлсэн огноо :</label>
               <div class="controls">
                 <input type="date" name="dor" class="span11" />
-                <span class="help-block">Date of registration</span> </div>
+                <span class="help-block">Бүртгүүлсэн огноо</span> </div>
             </div>
             
           
@@ -100,7 +100,7 @@ header('location:../index.php');
         <div class="widget-content nopadding">
           <div class="form-horizontal">
             <div class="control-group">
-              <label for="normal" class="control-label">Plans: </label>
+              <label for="normal" class="control-label">Хугацаа: </label>
               <div class="controls">
                 <select name="plan" required="required" id="select">
                   <option value="30" selected="selected">One Month</option>
@@ -138,14 +138,14 @@ header('location:../index.php');
         <div class="widget-content nopadding">
           <div class="form-horizontal">
             <div class="control-group">
-              <label for="normal" class="control-label">Contact Number</label>
+              <label for="normal" class="control-label">Холбоо барих</label>
               <div class="controls">
                 <input type="number" id="mask-phone" name="contact" class="span8 mask text">
                 <span class="help-block blue span8">(999) 999-9999</span> 
                 </div>
             </div>
             <div class="control-group">
-              <label class="control-label">Address :</label>
+              <label class="control-label">Хаяг :</label>
               <div class="controls">
                 <input type="text" class="span11" name="address" placeholder="Address" />
               </div>
@@ -160,27 +160,26 @@ header('location:../index.php');
             
             
             <div class="control-group">
-              <label class="control-label">Services</label>
+              <label class="control-label">Ангиуд : </label>
               <div class="controls">
                 <label>
                   <input type="radio" value="Fitness" name="services" />
                   Fitness</label>
                 <label>
-                  <input type="radio" value="Sauna" name="services" />
-                  Sauna</label>
+                  <input type="radio" value="spinning" name="services" />
+                  spinning </label>
                 <label>
-                  <input type="radio" value="Cardio" name="services" />
-                  Cardio</label>
+                  <input type="radio" value="fitness VIP" name="services" />
+                  fitness VIP </label>
               </div>
             </div>
-
             <div class="control-group">
-              <label class="control-label">Total Amount</label>
+              <label class="control-label">Сарын төлбар</label>
               <div class="controls">
                 <div class="input-append">
-                  <span class="add-on">$</span> 
-                  <input type="number" placeholder="500" name="amount" class="span11">
-                  </div>
+                  <span class="add-on">₮</span> 
+                  <input type="text" placeholder="123,000" name="amount" class="span11" oninput="formatNumber(this)">
+                </div>
               </div>
             </div>
             
@@ -268,6 +267,24 @@ header('location:../index.php');
 function resetMenu() {
    document.gomenu.selector.selectedIndex = 2;
 }
+
+  function formatNumber(input) {
+    // Remove non-numeric characters
+    const numericValue = input.value.replace(/[^0-9]/g, '');
+
+    // Format as plain number with commas
+    const formattedValue = new Intl.NumberFormat('en-US', {
+      minimumFractionDigits: 0,
+    }).format(numericValue);
+
+    // Update the input value
+    input.value = formattedValue;
+  }
+
+
+
+
+
 </script>
 </body>
 </html>

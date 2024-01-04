@@ -26,7 +26,9 @@ header('location:../index.php');
 
 <!--Header-part-->
 <div id="header">
-  <h1><a href="dashboard.html">Perfect Gym Admin</a></h1>
+    <h1>
+    <img src="../img/icontest3.png" alt="">
+  </h1>
 </div>
 <!--close-Header-part--> 
 
@@ -48,7 +50,7 @@ header('location:../index.php');
 <div id="content">
   <div id="content-header">
     <div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="fas fa-home"></i> Home</a> <a href="#" class="current">Registered Members</a> </div>
-    <h1 class="text-center">Registered Members List <i class="fas fa-group"></i></h1>
+    <h1 class="text-center">Бүртгэгдсэн гишүүдийн жагсаалт <i class="fas fa-group"></i></h1>
   </div>
   <div class="container-fluid">
     <hr>
@@ -57,7 +59,7 @@ header('location:../index.php');
 
       <div class='widget-box'>
           <div class='widget-title'> <span class='icon'> <i class='fas fa-th'></i> </span>
-            <h5>Member table</h5>
+            <h5>Гишүүдийн бүртгэл</h5>
           </div>
           <div class='widget-content nopadding'>
 	  
@@ -73,30 +75,32 @@ header('location:../index.php');
               <thead>
                 <tr>
                   <th>#</th>
-                  <th>Fullname</th>
-                  <th>Username</th>
-                  <th>Gender</th>
-                  <th>Contact Number</th>
-                  <th>D.O.R</th>
-                  <th>Address</th>
-                  <th>Amount</th>
-                  <th>Choosen Service</th>
-                  <th>Plan</th>
+                  <th>Овог нэр</th>
+                  
+                  <th>Хүйс</th>
+                  <th>Холбоо барих</th>
+                  <th>Бүртгүүлсэн огноо</th>
+                  <th>Хаяг</th>
+                  <th>Мөнгөн дүн</th>
+                  <th>Сонгосон ангиуд</th>
+                  <th>Сар</th>
                 </tr>
               </thead>";
               
             while($row=mysqli_fetch_array($result)){
+              $mount = $row['amount'];
+              $mount = number_format($mount, 2);
             
             echo"<tbody> 
                
                 <td><div class='text-center'>".$cnt."</div></td>
                 <td><div class='text-center'>".$row['fullname']."</div></td>
-                <td><div class='text-center'>@".$row['username']."</div></td>
+                
                 <td><div class='text-center'>".$row['gender']."</div></td>
                 <td><div class='text-center'>".$row['contact']."</div></td>
                 <td><div class='text-center'>".$row['dor']."</div></td>
                 <td><div class='text-center'>".$row['address']."</div></td>
-                <td><div class='text-center'>$".$row['amount']."</div></td>
+                <td><div class='text-center'>₮".$mount."</div></td>
                 <td><div class='text-center'>".$row['services']."</div></td>
                 <td><div class='text-center'>".$row['plan']." Month/s</div></td>
              

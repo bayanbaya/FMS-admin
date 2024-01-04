@@ -57,7 +57,7 @@ $result=mysqli_query($con,$qry);
 
       function drawStuff() {
         var data = new google.visualization.arrayToDataTable([
-          ['Terms', 'Total Amount',],
+          ['Terms', 'Нийт дүн',],
           
           <?php
           $query1 = "SELECT gender, SUM(amount) as numberone FROM members; ";
@@ -117,7 +117,7 @@ $result=mysqli_query($con,$qry);
 
       function drawStuff() {
         var data = new google.visualization.arrayToDataTable([
-          ['Services', 'Total Numbers'],
+          ['Services', 'Нийт гишүүд'],
           // ["King's pawn (e4)", 44],
           // ["Queen's pawn (d4)", 31],
           // ["Knight to King 3 (Nf3)", 12],
@@ -166,7 +166,9 @@ $result=mysqli_query($con,$qry);
 
 <!--Header-part-->
 <div id="header">
-  <h1><a href="dashboard.html">Perfect Gym Admin</a></h1>
+    <h1>
+    <img src="../img/icontest3.png" alt="">
+  </h1>
 </div>
 <!--close-Header-part--> 
 

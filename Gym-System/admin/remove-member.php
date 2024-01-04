@@ -22,11 +22,13 @@ header('location:../index.php');
 <link rel="stylesheet" href="../css/jquery.gritter.css" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body>dsa
 
 <!--Header-part-->
 <div id="header">
-  <h1><a href="dashboard.html">Perfect Gym Admin</a></h1>
+    <h1>
+    <img src="../img/icontest3.png" alt="">
+  </h1>
 </div>
 <!--close-Header-part--> 
 
@@ -57,7 +59,7 @@ header('location:../index.php');
 
       <div class='widget-box'>
           <div class='widget-title'> <span class='icon'> <i class='fas fa-th'></i> </span>
-            <h5>Member table</h5>
+            <h5>Гишүүдийн бүртгэл</h5>
           </div>
           <div class='widget-content nopadding'>
 	  
@@ -74,9 +76,9 @@ header('location:../index.php');
                 <tr>
                   <th>#</th>
                   <th>Fullname</th>
-                  <th>Username</th>
-                  <th>Contact Number</th>
-                  <th>D.O.R</th>
+                   
+                  <th>Холбоо барих</th>
+                  <th>Бүртгүүлсэн огноо</th>
                   <th>Address</th>
                   <th>Amount</th>
                   <th>Choosen Service</th>
@@ -91,7 +93,7 @@ header('location:../index.php');
                
                 <td><div class='text-center'>".$cnt."</div></td>
                 <td><div class='text-center'>".$row['fullname']."</div></td>
-                <td><div class='text-center'>@".$row['username']."</div></td>
+                
                 <td><div class='text-center'>".$row['contact']."</div></td>
                 <td><div class='text-center'>".$row['dor']."</div></td>
                 <td><div class='text-center'>".$row['address']."</div></td>

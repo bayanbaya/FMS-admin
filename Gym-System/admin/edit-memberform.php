@@ -64,7 +64,7 @@ while($row=mysqli_fetch_array($result)){
     <div class="span6">
       <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="fas fa-align-justify"></i> </span>
-          <h5>Personal-info</h5>
+          <h5>Хувийн мэдээлэл</h5>
         </div>
         <div class="widget-content nopadding">
 
@@ -99,10 +99,10 @@ while($row=mysqli_fetch_array($result)){
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label">D.O.R :</label>
+              <label class="control-label">Бүртгүүлсэн огноо :</label>
               <div class="controls">
                 <input type="date" name="dor" class="span11" value='<?php echo $row['dor']; ?>' />
-                <span class="help-block">Date of registration</span> </div>
+                <span class="help-block">Бүртгүүлсэн огноо</span> </div>
             </div>
             
           
@@ -116,7 +116,7 @@ while($row=mysqli_fetch_array($result)){
         <div class="widget-content nopadding">
           <div class="form-horizontal">
             <div class="control-group">
-              <label for="normal" class="control-label">Plans: </label>
+              <label for="normal" class="control-label">Хугацаа: </label>
               <div class="controls">
                 <select name="plan" required="required" id="select">
                   <option value="30" selected="selected" >One Month</option>
@@ -154,14 +154,14 @@ while($row=mysqli_fetch_array($result)){
         <div class="widget-content nopadding">
           <div class="form-horizontal">
             <div class="control-group">
-              <label for="normal" class="control-label">Contact Number</label>
+              <label for="normal" class="control-label">Холбоо барих</label>
               <div class="controls">
                 <input type="number" id="mask-phone" name="contact" value='<?php echo $row['contact']; ?>' class="span8 mask text">
                 <span class="help-block blue span8">(999) 999-9999</span> 
                 </div>
             </div>
             <div class="control-group">
-              <label class="control-label">Address :</label>
+              <label class="control-label">Хаяг :</label>
               <div class="controls">
                 <input type="text" class="span11" name="address" value='<?php echo $row['address']; ?>' />
               </div>
@@ -176,25 +176,25 @@ while($row=mysqli_fetch_array($result)){
             
             
             <div class="control-group">
-              <label class="control-label">Services</label>
+              <label class="control-label">Ангиуд : </label>
               <div class="controls">
                 <label>
                   <input type="radio" value="Fitness" name="services" />
-                  Fitness <small>- $55 per month</small></label>
+                  Fitness <small>- ₮150'000 /сараар/</small></label>
                 <label>
-                  <input type="radio" value="Sauna" name="services" />
-                  Sauna <small>- $35 per month</small></label>
+                  <input type="radio" value="spinning" name="services" />
+                  spinning <small>- 100'000 /сараар/</small></label>
                 <label>
-                  <input type="radio" value="Cardio" name="services" />
-                  Cardio <small>- $40 per month</small></label>
+                  <input type="radio" value="fitness VIP" name="services" />
+                  fitness VIP <small>- 280'000 /сараар/</small></label>
               </div>
             </div>
 
             <div class="control-group">
-              <label class="control-label">Total Amount</label>
+              <label class="control-label">Нийт дүн</label>
               <div class="controls">
                 <div class="input-append">
-                  <span class="add-on">$</span> 
+                  <span class="add-on">₮</span> 
                   <input type="number" value='<?php echo $row['amount']; ?>' name="amount" class="span11">
                   </div>
               </div>

@@ -71,7 +71,7 @@ header('location:../index.php');
                 <tr>
                   <th>#</th>
                   <th>Fullname</th>
-                  <th>Contact Number</th>
+                  <th>Холбоо барих</th>
                   <th>Choosen Service</th>
                   <th>Plan</th>
                   <th>Membership Status</th>

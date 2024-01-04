@@ -27,7 +27,9 @@ header('location:../index.php');
 
 <!--Header-part-->
 <div id="header">
-  <h1><a href="dashboard.html">Perfect Gym Admin</a></h1>
+    <h1>
+    <img src="../img/icontest3.png" alt="">
+  </h1>
 </div>
 <!--close-Header-part--> 
 
@@ -69,17 +71,17 @@ header('location:../index.php');
                 <table class="">
                   <tbody>
                   <tr>
-                      <td><h4>Perfect GYM Club</h4></td>
+                      <td><h4>Mustang Fitness Club</h4></td>
                     </tr>
                     <tr>
-                      <td>5021  Wetzel Lane, Williamsburg</td>
+                      <td>Ховд аймаг Жаргалант сум</td>
                     </tr>
                     
                     <tr>
-                      <td>Tel: 231-267-6011</td>
+                      <td>Tel: (+976) 9911-9922</td>
                     </tr>
                     <tr>
-                      <td >Email: support@perfectgym.com</td>
+                      <td >Email: mustang@gmail.com</td>
                     </tr>
                   </tbody>
                 </table>

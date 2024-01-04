@@ -121,14 +121,14 @@ while($row=mysqli_fetch_array($result)){
         <div class="widget-content nopadding">
           <div class="form-horizontal">
             <div class="control-group">
-              <label for="normal" class="control-label">Contact Number</label>
+              <label for="normal" class="control-label">Холбоо барих</label>
               <div class="controls">
                 <input type="number" id="mask-phone" name="contact" value='<?php echo $row['contact']; ?>' class="span8 mask text">
                 <span class="help-block blue span8">(999) 999-9999</span> 
                 </div>
             </div>
             <div class="control-group">
-              <label class="control-label">Address :</label>
+              <label class="control-label">Хаяг :</label>
               <div class="controls">
                 <input type="text" class="span11" name="address" value='<?php echo $row['address']; ?>' />
               </div>

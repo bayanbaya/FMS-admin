@@ -25,7 +25,9 @@ header('location:../index.php');
 
 <!--Header-part-->
 <div id="header">
-  <h1><a href="dashboard.html">Perfect Gym Admin</a></h1>
+    <h1>
+    <img src="../img/icontest3.png" alt="">
+  </h1>
 </div>
 <!--close-Header-part--> 
 
@@ -70,7 +72,7 @@ header('location:../index.php');
                 <tr>
                   <th>#</th>
                   <th>Fullname</th>
-                  <th>Contact Number</th>
+                  <th>Холбоо барих</th>
                   <th>Choosen Service</th>
                   <th>Action</th>
                 </tr>

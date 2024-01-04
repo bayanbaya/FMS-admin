@@ -46,7 +46,7 @@ header('location:../index.php');
 <div id="content">
   <div id="content-header">
     <div id="breadcrumb"> <a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="#" class="current">Registered Members</a> </div>
-    <h1 class="text-center">Registered Members List <i class="icon icon-group"></i></h1>
+    <h1 class="text-center">Бүртгэгдсэн гишүүдийн жагсаалт <i class="icon icon-group"></i></h1>
   </div>
   <div class="container-fluid">
     <hr>
@@ -55,7 +55,7 @@ header('location:../index.php');
 
       <div class='widget-box'>
           <div class='widget-title'> <span class='icon'> <i class='icon-th'></i> </span>
-            <h5>Member table</h5>
+            <h5>Гишүүдийн бүртгэл</h5>
           </div>
           <div class='widget-content nopadding'>
 	  
@@ -72,10 +72,10 @@ header('location:../index.php');
                 <tr>
                   <th>#</th>
                   <th>Fullname</th>
-                  <th>Username</th>
+                   
                   <th>Gender</th>
-                  <th>Contact Number</th>
-                  <th>D.O.R</th>
+                  <th>Холбоо барих</th>
+                  <th>Бүртгүүлсэн огноо</th>
                   <th>Address</th>
                   <th>Amount</th>
                   <th>Choosen Service</th>
@@ -89,7 +89,7 @@ header('location:../index.php');
                
                 <td><div class='text-center'>".$cnt."</div></td>
                 <td><div class='text-center'>".$row['fullname']."</div></td>
-                <td><div class='text-center'>@".$row['username']."</div></td>
+                
                 <td><div class='text-center'>".$row['gender']."</div></td>
                 <td><div class='text-center'>".$row['contact']."</div></td>
                 <td><div class='text-center'>".$row['dor']."</div></td>

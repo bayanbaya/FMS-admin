@@ -25,7 +25,9 @@ header('location:../index.php');
 
 <!--Header-part-->
 <div id="header">
-  <h1><a href="dashboard.html">Perfect Gym Admin</a></h1>
+    <h1>
+    <img src="../img/icontest3.png" alt="">
+  </h1>
 </div>
 <!--close-Header-part--> 
 <!-- Visit codeastro.com for more projects -->
@@ -126,7 +128,7 @@ header('location:../index.php');
         <div class="widget-content nopadding">
           <div class="form-horizontal">
             <div class="control-group">
-              <label for="normal" class="control-label">Contact Number</label>
+              <label for="normal" class="control-label">Холбоо барих</label>
               <div class="controls">
                 <input type="text" id="mask-phone" name="contact" minlength="10" maxlength="10" value='<?php echo $row['contact']; ?>' class="span8 mask text" required>
                 <span class="help-block blue span8">(999) 999-9999</span> 
@@ -140,7 +142,7 @@ header('location:../index.php');
             </div>
 
             <div class="control-group">
-              <label class="control-label">Address :</label>
+              <label class="control-label">Хаяг :</label>
               <div class="controls">
                 <input type="text" class="span11" name="address" value='<?php echo $row['address']; ?>' required />
               </div>
@@ -152,27 +154,11 @@ header('location:../index.php');
         </div>
         <div class="widget-content nopadding">
           <div class="form-horizontal">
-            <div>ene bopal uzuulelqtu ym </div>
-            <div> </div>
-            <div></div>
-            <div></div>
-            <div></div>
-            publioc statuc voi{
-                  main{
-                    <a>mainsurgal sa/div></a>
-                    <a></a><a></a><a></a>
-                    <a></a>                  }
-                    <a></a>
-            }
-            
-            
-    
-
             <div class="control-group">
               <label class="control-label">Total Cost: </label>
               <div class="controls">
                 <div class="input-append">
-                  <span class="add-on">$</span> 
+                  <span class="add-on">₮</span> 
                   <input type="number" placeholder="120000" name="amount" value='<?php echo $row['amount']; ?>' class="span11" required>
                   </div>
               </div>

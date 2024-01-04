@@ -26,7 +26,9 @@ header('location:../index.php');
 
 <!--Header-part--><!-- Visit codeastro.com for more projects -->
 <div id="header">
-  <h1><a href="dashboard.html">Perfect Gym Admin</a></h1>
+    <h1>
+    <img src="../img/icontest3.png" alt="">
+  </h1>
 </div>
 <!--close-Header-part--> 
 
@@ -55,17 +57,17 @@ header('location:../index.php');
     <div class="span6">
       <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="fas fa-align-justify"></i> </span>
-          <h5>Personal-info</h5>
+          <h5>Хувийн мэдээлэл</h5>
         </div>
         <div class="widget-content nopadding">
           <form action="add-member-req.php" method="POST" class="form-horizontal">
             <div class="control-group">
               <label class="control-label">Full Name :</label>
               <div class="controls">
-                <input type="text" class="span11" name="fullname" placeholder="Fullname" />
+                <input type="text" class="span11" name="fullname" placeholder="Fullname" required/>
               </div>
             </div>
-            <div class="control-group">
+            <!-- <div class="control-group">
               <label class="control-label">Username :</label>
               <div class="controls">
                 <input type="text" class="span11" name="username" placeholder="Username" />
@@ -77,11 +79,11 @@ header('location:../index.php');
                 <input type="password"  class="span11" name="password" placeholder="**********"  />
                 <span class="help-block">Note: The given information will create an account for this particular member</span>
               </div>
-            </div>
+            </div> -->
             <div class="control-group">
               <label class="control-label">Gender :</label>
               <div class="controls">
-              <select name="gender" required="required" id="select">
+              <select name="gender" required="required" id="select" required>
                   <option value="Male" selected="selected">Male</option>
                   <option value="Female">Female</option>
                   <option value="Other">Other</option>
@@ -89,10 +91,10 @@ header('location:../index.php');
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label">D.O.R :</label>
+              <label class="control-label">Бүртгүүлсэн огноо :</label>
               <div class="controls">
-                <input type="date" name="dor" class="span11" />
-                <span class="help-block">Date of registration</span> </div>
+                <input type="date" name="dor" class="span11" required/>
+                <span class="help-block" >Бүртгүүлсэн огноо</span> </div>
             </div>
             
           
@@ -106,7 +108,7 @@ header('location:../index.php');
         <div class="widget-content nopadding">
           <div class="form-horizontal">
             <div class="control-group">
-              <label for="normal" class="control-label">Plans: </label>
+              <label for="normal" class="control-label">Хугацаа: </label>
               <div class="controls">
                 <select name="plan" required="required" id="select">
                   <option value="1" selected="selected">One Month</option>
@@ -144,16 +146,16 @@ header('location:../index.php');
         <div class="widget-content nopadding">
           <div class="form-horizontal">
             <div class="control-group">
-              <label for="normal" class="control-label">Contact Number</label>
+              <label for="normal" class="control-label">Холбоо барих</label>
               <div class="controls">
-                <input type="number" id="mask-phone" name="contact" placeholder="9876543210" class="span8 mask text">
-                <span class="help-block blue span8">(999) 999-9999</span> 
+                <input type="number" id="mask-phone" name="contact" placeholder="12345678" class="span8 mask text" required>
+                <span class="help-block blue span8">9911-9922</span> 
                 </div>
             </div>
             <div class="control-group">
-              <label class="control-label">Address :</label>
+              <label class="control-label" required>Хаяг :</label>
               <div class="controls">
-                <input type="text" class="span11" name="address" placeholder="Address" />
+                <input type="text" class="span11" name="address" placeholder="Address" required/>
               </div>
             </div>
           </div>
@@ -165,28 +167,31 @@ header('location:../index.php');
           <div class="form-horizontal">
             
             
-            <div class="control-group">
-              <label class="control-label">Services</label>
-              <div class="controls">
-                <label>
-                  <input type="radio" value="Fitness" name="services" />
-                  Fitness <small>- $55 per month</small></label>
-                <label>
-                  <input type="radio" value="Sauna" name="services" />
-                  Sauna <small>- $35 per month</small></label>
-                <label>
-                  <input type="radio" value="Cardio" name="services" />
-                  Cardio <small>- $40 per month</small></label>
-              </div>
+          <div class="control-group">
+            <label class="control-label">Ангиуд : </label>
+            <div class="controls">
+              <label>
+                <input type="radio" value="Fitness" name="services" required />
+                Fitness <small>- ₮150'000 /сараар/</small>
+              </label>
+              <label>
+                <input type="radio" value="spinning" name="services" required />
+                spinning <small>- ₮100'000 /сараар/</small>
+              </label>
+              <label>
+                <input type="radio" value="fitness VIP "< name="services" required />
+                fitness VIP <small>- ₮280'000 /сараар/</small>
+              </label>
             </div>
+          </div>
 
-            <div class="control-group">
-              <label class="control-label">Total Amount</label>
+          <div class="control-group">
+              <label class="control-label">Сарын төлбар</label>
               <div class="controls">
                 <div class="input-append">
-                  <span class="add-on">$</span> 
-                  <input type="number" placeholder="50" name="amount" class="span11">
-                  </div>
+                  <span class="add-on">₮</span> 
+                  <input type="text" placeholder="123,000" name="amount" class="span11" oninput="formatNumber(this)">
+                </div>
               </div>
             </div>
             
@@ -274,6 +279,21 @@ header('location:../index.php');
 function resetMenu() {
    document.gomenu.selector.selectedIndex = 2;
 }
+
+function formatNumber(input) {
+    // Remove non-numeric characters
+    const numericValue = input.value.replace(/[^0-9]/g, '');
+
+    // Format as plain number with commas
+    const formattedValue = new Intl.NumberFormat('en-US', {
+      minimumFractionDigits: 0,
+    }).format(numericValue);
+
+    // Update the input value
+    input.value = formattedValue;
+  }
+
+
 </script>
 </body>
 </html>

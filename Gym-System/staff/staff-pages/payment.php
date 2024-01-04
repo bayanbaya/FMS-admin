@@ -47,7 +47,7 @@ header('location:../index.php');
 <div id="content">
   <div id="content-header">
     <div id="breadcrumb"> <a href="index.php" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="payment.php" class="current">Payments</a> </div>
-    <h1 class="text-center">Registered Member's Payment <i class="icon icon-group"></i></h1>
+    <h1 class="text-center">Бүртгэлтэй гишүүний төлбөр<i class="icon icon-group"></i></h1>
   </div>
   <div class="container-fluid">
     <hr>
@@ -56,7 +56,7 @@ header('location:../index.php');
 
       <div class='widget-box'>
           <div class='widget-title'> <span class='icon'> <i class='icon-th'></i> </span>
-            <h5>Member's Payment table</h5>
+            <h5>Гишүүний төлбөрийн хүснэгт</h5>
             <form id="custom-search-form" role="search" method="POST" action="search-result.php" class="form-search form-horizontal pull-right">
                 <div class="input-append span12">
                     <input type="text" class="search-query" placeholder="Search" name="search" required>

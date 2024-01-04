@@ -148,8 +148,8 @@ include('dbcon.php'); ?>
                             <select name="services" required="required" id="select">
                             <option selected="true" disabled="disabled">Select Service</option>
                                 <option value="Fitness" >Fitness</option>
-                                <option value="Sauna">Sauna</option>
-                                <option value="Cardio">Cardio</option>
+                                <option value="spinning">spinning </option>
+                                <option value="fitness VIP <>fitness VIP </option>
                             </select>
                             </div>
                         </div>

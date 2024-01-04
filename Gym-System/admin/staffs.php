@@ -26,7 +26,9 @@ header('location:../index.php');
 
 <!--Header-part-->
 <div id="header">
-  <h1><a href="dashboard.html">Perfect Gym Admin</a></h1>
+    <h1>
+    <img src="../img/icontest3.png" alt="">
+  </h1>
 </div>
 <!--close-Header-part--> 
 
@@ -68,7 +70,7 @@ header('location:../index.php');
                 <tr>
                   <th>#</th>
                   <th>Fullname</th>
-                  <th>Username</th>
+                   
                   <th>Gender</th>
                   <th>Designation</th>
                   <th>Email</th>
@@ -84,7 +86,7 @@ header('location:../index.php');
                 <tr class=''>
                 <td><div class='text-center'>".$cnt."</div></td>
                 <td><div class='text-center'>".$row['fullname']."</div></td>
-                <td><div class='text-center'>@".$row['username']."</div></td>
+                
                 <td><div class='text-center'>".$row['gender']."</div></td>
                 <td><div class='text-center'>".$row['designation']."</div></td>
                 <td><div class='text-center'>".$row['email']."</div></td>

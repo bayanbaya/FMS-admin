@@ -26,7 +26,9 @@ header('location:../index.php');
 
 <!--Header-part-->
 <div id="header">
-  <h1><a href="dashboard.html">Perfect Gym Admin</a></h1>
+    <h1>
+    <img src="../img/icontest3.png" alt="">
+  </h1>
 </div>
 <!--close-Header-part--> 
 
@@ -133,14 +135,14 @@ header('location:../index.php');
                                                                     </tr>
 
                                                                     <tr>
-                                                                        <td><?php echo 'Charge Per Month'; ?></td>
+                                                                        <td><?php echo 'Сарын төлбөр'; ?></td>
                                                                         <td class="alignright"><?php echo '$'.$amount?></td>
                                                                     </tr>
                                                                    
                                                                     
                                                                     <tr class="total">
-                                                                        <td class="alignright" width="80%">Total Amount</td>
-                                                                        <td class="alignright">$<?php echo $amountpayable; ?></td>
+                                                                        <td class="alignright" width="80%">Нийт дүн</td>
+                                                                        <td class="alignright">₮<?php echo $amountpayable; ?></td>
                                                                     </tr>
                                                                 </tbody></table>
                                                             </td>

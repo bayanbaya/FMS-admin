@@ -119,7 +119,7 @@ header('location:../index.php');
         <div class="widget-content nopadding">
           <div class="form-horizontal">
             <div class="control-group">
-              <label for="normal" class="control-label">Contact Number</label>
+              <label for="normal" class="control-label">Холбоо барих</label>
               <div class="controls">
                 <input type="number" id="mask-phone" name="contact" class="span8 mask text" required>
                 <span class="help-block blue span8">(999) 999-9999</span> 
@@ -133,7 +133,7 @@ header('location:../index.php');
             </div>
 
             <div class="control-group">
-              <label class="control-label">Address :</label>
+              <label class="control-label">Хаяг :</label>
               <div class="controls">
                 <input type="text" class="span11" name="address" placeholder="Vendor Address" required />
               </div>
@@ -153,7 +153,7 @@ header('location:../index.php');
               <label class="control-label">Total Cost: </label>
               <div class="controls">
                 <div class="input-append">
-                  <span class="add-on">$</span> 
+                  <span class="add-on">₮</span> 
                   <input type="number" placeholder="120000" name="amount" class="span11" required>
                   </div>
               </div>

@@ -64,7 +64,7 @@ $result5=mysqli_query($con,$qry);
 
       function drawStuff() {
         var data = new google.visualization.arrayToDataTable([
-          ['Services', 'Total Numbers'],
+          ['Services', 'Нийт гишүүд'],
           // ["King's pawn (e4)", 44],
           // ["Queen's pawn (d4)", 31],
           // ["Knight to King 3 (Nf3)", 12],
@@ -115,7 +115,7 @@ $result5=mysqli_query($con,$qry);
 
       function drawStuff() {
         var data = new google.visualization.arrayToDataTable([
-          ['Terms', 'Total Amount',],
+          ['Terms', 'Нийт дүн',],
           
           <?php
           $query1 = "SELECT gender, SUM(amount) as numberone FROM members; ";
@@ -221,8 +221,11 @@ $result5=mysqli_query($con,$qry);
 
 <!--Header-part-->
 <div id="header">
-  <h1><a href="dashboard.html">Perfect Gym Admin</a></h1>
+    <h1>
+    <img src="../img/icontest3.png" alt="">
+  </h1>
 </div>
+
 <!--close-Header-part--> 
 
 
@@ -247,12 +250,10 @@ $result5=mysqli_query($con,$qry);
   <div class="container-fluid">
     <div class="quick-actions_homepage">
       <ul class="quick-actions">
-        <li class="bg_ls span"> <a href="index.php" style="font-size: 16px;"> <i class="fas fa-user-check"></i> <span class="label label-important"><?php include'actions/dashboard-activecount.php'?></span> Идвэхтэй гишүүд </a> </li>
-        <li class="bg_lo span3"> <a href="members.php" style="font-size: 16px;"> <i class="fas fa-users"></i></i><span class="label label-important"><?php include'dashboard-usercount.php'?></span> Бүртгэлтэй гишүүд</a> </li>
-        <li class="bg_lg span3"> <a href="payment.php" style="font-size: 16px;"> <i class="fa fa-dollar-sign"></i> Нийт орлого: ₮<?php include'income-count.php' ?></a> </li>
-        <li class="bg_lb span2"> <a href="announcement.php" style="font-size: 16px;"> <i class="fas fa-bullhorn"></i><span class="label label-important"><?php include'actions/count-announcements.php'?></span>Зарууд </a> </li>
-
-        
+        <li class="bg_ls span"  style="border-radius: 11px;"> <a href="index.php" style="font-size: 16px; border-radius: 11px;"> <i class="fas fa-user-check"></i> <span class="label label-important"><?php include'actions/dashboard-activecount.php'?></span> Идвэхтэй гишүүд </a> </li>
+        <li class="bg_lo span3" style="border-radius: 11px;"> <a href="members.php" style="font-size: 16px; border-radius: 11px;"> <i class="fas fa-users"></i></i><span class="label label-important"><?php include'dashboard-usercount.php'?></span> Бүртгэлтэй гишүүд</a> </li>
+        <li class="bg_lg span3" style="border-radius: 11px;"> <a href="payment.php" style="font-size: 16px; border-radius: 11px;"> <i class="fa fa-dollar-sign"></i> Нийт орлого: ₮<?php include'income-count.php' ?></a> </li>
+        <li class="bg_lb span2" style="border-radius: 11px;"> <a href="announcement.php" style="font-size: 16px; border-radius: 11px;"> <i class="fas fa-bullhorn"></i><span class="label label-important"><?php include'actions/count-announcements.php'?></span>Зарууд </a> </li>
         <!-- <li class="bg_ls span2"> <a href="buttons.html"> <i class="fas fa-tint"></i> Buttons</a> </li>
         <li class="bg_ly span3"> <a href="form-common.html"> <i class="fas fa-th-list"></i> Forms</a> </li>
         <li class="bg_lb span2"> <a href="interface.html"> <i class="fas fa-pencil"></i>Elements</a> </li> -->
@@ -277,12 +278,13 @@ $result5=mysqli_query($con,$qry);
             </div>
             <div class="span4">
               <ul class="site-stats">
-                <li class="bg_lh"><i class="fas fa-users"></i> <strong><?php include 'dashboard-usercount.php';?></strong> <small>Total Members</small></li>
-                <li class="bg_lg"><i class="fas fa-user-clock"></i> <strong><?php include 'actions/dashboard-staff-count.php';?></strong> <small>Staff Users</small></li>
-                <li class="bg_ls"><i class="fas fa-dumbbell"></i> <strong><?php include 'actions/count-equipments.php';?></strong> <small>Available Equipments</small></li>
-                <li class="bg_ly"><i class="fas fa-file-invoice-dollar"></i> <strong>$<?php include 'actions/total-exp.php';?></strong> <small>Total Expenses</small></li>
-                <li class="bg_lr"><i class="fas fa-user-ninja"></i> <strong><?php include 'actions/count-trainers.php';?></strong> <small>Active Gym Trainers</small></li>
-                <li class="bg_lb"><i class="fas fa-calendar-check"></i> <strong><?php include 'actions/count-attendance.php';?></strong> <small>Present Members</small></li>
+              <!-- Нийт гишүүд    Ажилтан    Боломжтой тоног төхөөрөмж    Нийт зардал    Идвэхтэй гишүүд    Одоогийн гишүүд -->
+                <li style="border-radius: 11px;" class="bg_lh"><i class="fas fa-users"></i> <strong><?php include 'dashboard-usercount.php';?></strong> <small>Нийт гишүүд</small></li>
+                <li style="border-radius: 11px;" class="bg_lg"><i class="fas fa-user-clock"></i> <strong><?php include 'actions/dashboard-staff-count.php';?></strong> <small>Ажилчид</small></li>
+                <li style="border-radius: 11px;" class="bg_ls"><i class="fas fa-dumbbell"></i> <strong><?php include 'actions/count-equipments.php';?></strong> <small>тоног төхөөрөмж</small></li>
+                <li style="border-radius: 11px;" class="bg_ly"><i class="fas fa-file-invoice-dollar"></i> <strong>₮<?php include 'actions/total-exp.php';?></strong> <small>Нийт зардал</small></li>
+                <li style="border-radius: 11px;" class="bg_lr"><i class="fas fa-user-ninja"></i> <strong><?php include 'actions/count-trainers.php';?></strong> <small>Active Gym Trainers</small></li>
+                <li style="border-radius: 11px;" class="bg_lb"><i class="fas fa-calendar-check"></i> <strong><?php include 'actions/count-attendance.php';?></strong> <small>Present Members</small></li>
               </ul>
             </div>
           </div>
@@ -293,7 +295,7 @@ $result5=mysqli_query($con,$qry);
     <div class="row-fluid">
       <div class="widget-box">
         <div class="widget-title bg_lg"><span class="icon"><i class="fas fa-file"></i></span>
-          <h5>Earnings & Expenses Reports</h5>
+          <h5> Орлого & зардлын тайлан</h5>
         </div>
         <div class="widget-content" >
           <div class="row-fluid">
@@ -311,7 +313,7 @@ $result5=mysqli_query($con,$qry);
       <div class="span6">
         <div class="widget-box">
           <div class="widget-title bg_ly" data-toggle="collapse" href="#collapseG2"><span class="icon"><i class="fas fa-chevron-down"></i></span>
-            <h5>Registered Gym Members by Gender: Overview</h5>
+            <h5>Хүйсийн харьцаа</h5>
           </div>
           <div class="widget-content nopadding collapse in" id="collapseG2">
             <ul class="recent-posts">
@@ -326,7 +328,8 @@ $result5=mysqli_query($con,$qry);
       <div class="span6">
         <div class="widget-box">
           <div class="widget-title bg_ly" data-toggle="collapse" href="#collapseG2"><span class="icon"><i class="fas fa-chevron-down"></i></span>
-            <h5>Staff Members by Designation: Overview</h5>
+            <!-- <h5>Staff Members by Designation: Overview</h5> -->
+            <h5>Ажилтнууд</h5>
           </div>
           <div class="widget-content nopadding collapse in" id="collapseG2">
             <ul class="recent-posts">
@@ -344,7 +347,7 @@ $result5=mysqli_query($con,$qry);
       <div class="span6">
         <div class="widget-box">
           <div class="widget-title bg_ly" data-toggle="collapse" href="#collapseG2"><span class="icon"><i class="fas fa-chevron-down"></i></span>
-            <h5>Gym Announcement</h5>
+            <h5>Мэдэгдэл</h5>
           </div>
           <div class="widget-content nopadding collapse in" id="collapseG2">
             <ul class="recent-posts">
@@ -380,7 +383,8 @@ $result5=mysqli_query($con,$qry);
        
       <div class="widget-box">
           <div class="widget-title"> <span class="icon"><i class="fas fa-tasks"></i></span>
-            <h5>Customer's To-Do Lists</h5>
+            <!-- <h5>Customer's To-Do Lists</h5> -->
+            <h5>Хэрэглэгчийн хийх зүйлсийн жагсаалт</h5>
           </div>
           <div class="widget-content">
             <div class="todo">
@@ -421,6 +425,9 @@ $result5=mysqli_query($con,$qry);
 </div>
 
 <style>
+
+    
+
 #footer {
   color: white;
 }

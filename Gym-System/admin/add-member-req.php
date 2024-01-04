@@ -26,7 +26,9 @@ header('location:../index.php');
 <!-- Visit codeastro.com for more projects -->
 <!--Header-part-->
 <div id="header">
-  <h1><a href="dashboard.html">Perfect Gym Admin</a></h1>
+    <h1>
+    <img src="../img/icontest3.png" alt="">
+  </h1>
 </div>
 <!--close-Header-part--> 
 
@@ -54,13 +56,14 @@ header('location:../index.php');
 
 if(isset($_POST['fullname'])){
   $fullname = $_POST["fullname"];    
-  $username = $_POST["username"];
-  $password = $_POST["password"];
+  $username = "";
+  $password = "";
   $dor = $_POST["dor"];
   $gender = $_POST["gender"];
   $services = $_POST["services"];
   // $paid_date='$curr_date';
   $amount = $_POST["amount"];
+  $amount = str_replace(",", "", $amount);
   $p_year = date('Y');
   $paid_date = date("Y-m-d");
   $plan = $_POST["plan"];
@@ -68,6 +71,8 @@ if(isset($_POST['fullname'])){
   $contact = $_POST["contact"];
 
   $password = md5($password);
+
+
 
   $totalamount = $amount * $plan;
   // <!-- Visit codeastro.com for more projects -->
